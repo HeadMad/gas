@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+  <style>
+    /* Убираем отступы у body, чтобы iframe занимал всё пространство */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    document.write(
+      `<iframe id="frame" src="https://script.google.com/macros/s/${location.location.pathname.substring(5)}/exec?${location.hash.substring(1)}" style="width: 100vw; height: 100vh; border: none; margin: 0; padding: 0; display: block;" frameborder="0"></iframe>`
+    );
+  </script>
+</body>
+
+</html>
