@@ -21,7 +21,7 @@
     src="" title="" onload="loader.style.display='none'"></iframe>
   <script>
     const isTwa = location.pathname.startsWith('/gas/twa/');
-    let [id, path] = location.pathname.substring(5).replace('/', ' /').split(' ');
+    let [id, path = ''] = location.pathname.substring(5).replace('/', ' /').split(' ');
     let src = 'https://script.google.com/macros/s/' + id + '/exec' + path;
 
     if (/^\/twa(\b)/.test(path))
