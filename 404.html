@@ -27,7 +27,7 @@
     if (isTwa) 
       src += location.hash.replace('#', '?') + location.search.replace('?', '&');
     else
-      src += location.search;
+      src += location.search + location.hash;
     
     gas.src = src;
 
