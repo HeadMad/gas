@@ -35,9 +35,11 @@
             line-height: 1.6;
             margin-bottom: 25px;
         }
-        input[type="text"] {
-            width: calc(100% - 22px);
-            padding: 10px;
+        #deploymentId {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 10px;
+            height: 40px;
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -46,7 +48,8 @@
         button {
             background-color: #007bff;
             color: white;
-            padding: 12px 25px;
+            padding: 0 25px;
+            height: 40px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -67,7 +70,7 @@
     <div class="container">
         <h1>Приложения Google Apps Script</h1>
         <p>Добро пожаловать! Этот простой интерфейс позволяет вам получить доступ к вашим развернутым приложениям Google Apps Script. Введите идентификатор развертывания (Deployment ID) вашего скрипта ниже и нажмите "Перейти", чтобы открыть его.</p>
-        <input type="text" id="deploymentId" placeholder="Введите Deployment ID">
+        <input type="text" id="deploymentId" placeholder="Введите Deployment ID вашего проекта">
         <button onclick="redirectToGas()">Перейти</button>
     </div>
 

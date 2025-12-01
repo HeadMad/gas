@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "min": "for %f in (src\\\\*.html) do html-minifier-terser %f -o %~nf.html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true"
+    "min": "for %f in (src\\\\*.html) do html-minifier-terser %f -o %~nf.html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace  --minify-css true --minify-js true"
   },
   "repository": {
     "type": "git",
